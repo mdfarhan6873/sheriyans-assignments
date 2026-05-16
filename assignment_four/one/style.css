@@ -193,3 +193,63 @@ main > div:hover {
     color: #222;
     z-index: 0;
 }
+
+/* --- MAKING THE WEBSITE LOOK GOOD ON PHONES AND TABLETS --- */
+
+/* This part is for tablets and smaller laptops */
+@media (max-width: 1024px) {
+    main {
+        /* Changing height to auto so we can scroll */
+        height: auto;
+        /* Using 2 columns instead of 5 */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        /* Clearing the grid areas so boxes can stack easily */
+        grid-template-areas: none;
+        gap: 15px;
+    }
+
+    main > div {
+        /* Resetting the areas for each div */
+        grid-area: auto !important;
+        min-height: 250px;
+    }
+
+    /* Making the first big card take up both columns */
+    .left-top {
+        grid-column: span 2;
+    }
+    
+    /* Making the Framer card and "Work Together" card take full width too */
+    .left-bottom, .right-bottom {
+        grid-column: span 2;
+    }
+}
+
+/* This part is for mobile phones */
+@media (max-width: 600px) {
+    main {
+        /* Switching to just 1 column for small screens */
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .left-top, .left-bottom, .right-bottom {
+        /* On phones, everything is just 1 column wide */
+        grid-column: span 1;
+    }
+
+    /* Making the text a bit smaller so it fits better */
+    .left-top h1 {
+        font-size: 28px;
+    }
+
+    .left-bottom h2 {
+        font-size: 22px;
+    }
+    
+    /* Making the background icons smaller so they don't get in the way */
+    .bottom-graphic {
+        font-size: 70px;
+    }
+}
