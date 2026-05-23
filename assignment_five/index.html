@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <style type="text/tailwindcss">
+
+        @font-face {
+        font-family: "Manrope";
+        src: url("./assets/Manrope-VariableFont_wght.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Cormorant";
+        src: url("./assets/Cormorant-Italic-VariableFont_wght.ttf") format("truetype");
+    }
+
+    @theme {
+        --font-heading: "Manrope", sans-serif;
+        --font-body: "Cormorant", serif;
+    }
+
+    @keyframes scroll {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-50%);
+        }
+        
+    }
+
+    .ticker{
+        animation: scroll 20s linear infinite ;
+    }
+
+    .work{
+        display: grid;
+        gap: 20px;
+
+
+        grid-template-columns: 50% 50%;
+    }
+
+</style>
+</head>
+
+<body class="pb-50">
+    <header class=" h-20 w-full flex items-center justify-between pl-20px pr-20 pl-16">
+        <div class=""><img src="./assets/logo.png" alt="assignment 5 logo"></div>
+        <div class="flex gap-10  items-center">
+            <nav class="flex gap-10 h-full items-center">
+                <a href="#">Work</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Pages <span><i class="ri-arrow-down-s-line"></i></span></a>
+                <a href="#">Card<span class="text-red-300"> 0</span></a>
+            </nav>
+            <button class="rounded-2xl px-4 py-2 border">Get in Touch</button>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h1 class="text-stone-800 font-heading text-9xl h-auto w-full text-left mt-50 ml-20  ">Building Brands,
+                One<br>
+                Success Story at a Time.
+            </h1>
+            <p class="text-stone-700 font-body  text-left ml-20 text-4xl mt-5">Create a Brand That Resonates: We Can
+                Help You <br>
+                Define and Communicate Your Unique Message.
+            </p>
+            <button class="bg-stone-800 border rounded-4xl ml-20 px-5 py-3 text-white mt-5">Our Services</button>
+
+        </div>
+        <div class="overflow-hidden mx-20 mt-20 relative">
+            <div class="ticker flex gap-40 w-max">
+                <!-- Original -->
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce6a0062cf2d279e35_client-logo-02.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce9f1b45e141bf28b5_client-logo-03.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce2c404b364300ba31_client-logo-04.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418cea9dabe252e43b0c0_client-logo-07.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418cea9dabef95143b0c1_client-logo-06.svg"
+                    alt="">
+
+                <!-- Duplicate -->
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce6a0062cf2d279e35_client-logo-02.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce9f1b45e141bf28b5_client-logo-03.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce2c404b364300ba31_client-logo-04.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418cea9dabe252e43b0c0_client-logo-07.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418cea9dabef95143b0c1_client-logo-06.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce6a0062cf2d279e35_client-logo-02.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce9f1b45e141bf28b5_client-logo-03.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418ce2c404b364300ba31_client-logo-04.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418cea9dabe252e43b0c0_client-logo-07.svg"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c418cea9dabef95143b0c1_client-logo-06.svg"
+                    alt="">
+            </div>
+        </div>
+        <div class=" mx-20 h-100 mt-20 flex justify-between">
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Brand Strategy</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Strategy</a>
+
+            </div>
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Visual Identity</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Identity</a>
+
+            </div>
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Digital Marketing</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Marketing</a>
+
+            </div>
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Brand Management</h3>
+                <p class="text-stone-700">We help businesses to<br>
+                    implement their brand<br>
+                    across all touchpoints<br>
+                    and ensure consistency
+                </p>
+                <a href="#" class="underline">About Management</a>
+
+            </div>
+
+        </div>
+
+        <div class="h-20 mx-20 mt-20 border-b-1 ">
+            <p class="font-body">OUR WORK</p>
+        </div>
+
+        <div class="flex justify-between mx-20 items-center mt-10">
+            <h1 class="font-body text-6xl">Selected Work</h1>
+            <button class="border px-3 py-2 rounded-3xl ">All Work</button>
+        </div>
+
+        <div class="work mx-20 h-340  mt-10 overflow-hidden">
+            <div class="upper-left object-cover flex flex-col gap-2">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b981e34f347cacdc73b6_project-01-thumb.webp"
+                    alt="">
+                <div class="flex justify-between h-10 items-center px-5">
+                    <p>Invision Studio</p>
+                    <button class="border rounded-xl p-1 items-center">Marketing</button>
+                </div>
+            </div>
+            <div class="lower-left object-cover flex flex-col gap-2">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b96d86c0c985079d8d60_project-02-thumb.webp"
+                    alt="">
+                <div class="flex justify-between h-10 items-center px-5">
+                    <p>Invision Studio</p>
+                    <button class="border rounded-xl p-1 items-center">Marketing</button>
+                </div>
+            </div>
+            <div class="upper-right object-cover flex flex-col gap-2">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b953a2c1a5706f63bbe1_project-03-thumb.webp"
+                    alt="">
+                <div class="flex justify-between h-10 items-center px-5">
+                    <p>Invision Studio</p>
+                    <button class="border rounded-xl p-1 items-center">Marketing</button>
+                </div>
+            </div>
+            <div class="lower-right object-cover flex flex-col gap-2">
+                <img src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b943f334e17d7007a0ea_project-04-thumb.webp"
+                    alt="">
+                <div class="flex justify-between h-10 items-center px-5">
+                    <p>Invision Studio</p>
+                    <button class="border rounded-xl p-1 items-center">Marketing</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="h-20 mx-20 mt-20 border-b-1 ">
+            <p class="font-body">OUR VALUES</p>
+        </div>
+
+        <div class=" mx-20 h-100 mt-20 flex justify-left gap-40">
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Brand Strategy</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Strategy</a>
+
+            </div>
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Visual Identity</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Identity</a>
+
+            </div>
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Digital Marketing</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Marketing</a>
+
+            </div>
+            <!-- <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Brand Management</h3>
+                <p class="text-stone-700">We help businesses to<br>
+                    implement their brand<br>
+                    across all touchpoints<br>
+                    and ensure consistency
+                </p>
+                <a href="#" class="underline">About Management</a>
+
+            </div> -->
+
+        </div>
+
+        <div class=" mx-20 h-100 mt-20 flex justify-end gap-40">
+            <!-- <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Brand Strategy</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Strategy</a>
+
+            </div> -->
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Visual Identity</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Identity</a>
+
+            </div>
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Digital Marketing</h3>
+                <p class="text-stone-700">We help businesses<br>
+                    define their unique brand<br>
+                    message and branding<br>
+                    positioning.
+                </p>
+                <a href="#" class="underline">About Marketing</a>
+
+            </div>
+            <div class="flex rounded flex-col gap-5 py-15 px-10 w-[20%] bg-[#F4F4F5]">
+                <h3 class="font-bold font-body text-4xl">Brand Management</h3>
+                <p class="text-stone-700">We help businesses to<br>
+                    implement their brand<br>
+                    across all touchpoints<br>
+                    and ensure consistency
+                </p>
+                <a href="#" class="underline">About Management</a>
+
+            </div>
+
+        </div>
+
+        <div class="text-7xl flex justify-center mt-40  mx-120">
+            <h2 class="text-center">Crafting Exceptional Digital<br>
+                Experiences Across Al<br>
+                Platforms: Our Goal at Øliv.</h2>
+        </div>
+
+        <div class="flex gap-10 justify-center mt-20 mx-130">
+            <p class="text-center">At Øliv, our goal is to craft exceptional digital experiences <br> across all platforms. In today's digitally driven world,<br> having a strong online presence is paramount for <br> businesses to connect with their target audience <br> effectively. We understand the importance of delivering <br>seamless and engaging experiences that leave a lasting impression.</p>
+            <p class="text-center">Our team of skilled designers, developers, and digital <br>strategists collaborate to create customized digital<br> solutions tailored to your unique business needs.<br> Whether it's designing a user-friendly website,<br> developing a mobile application, or enhancing your <br>e-commerce platform, we strive to provide solutions that<br> not only meet but exceed your expectations.</p>
+        </div>
+
+    </main>
+</body>
+
+</html>
